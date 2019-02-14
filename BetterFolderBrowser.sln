@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterFolderBrowser", "BetterFolderBrowser\BetterFolderBrowser.csproj", "{5711425B-04D4-446E-B7A1-7E6A119B75FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterFolderBrowser.Tests", "BetterFolderBrowser.Tests\BetterFolderBrowser.Tests.csproj", "{A91DE82C-CD9B-4AE4-9013-BAB2826BF308}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5711425B-04D4-446E-B7A1-7E6A119B75FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5711425B-04D4-446E-B7A1-7E6A119B75FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5711425B-04D4-446E-B7A1-7E6A119B75FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5711425B-04D4-446E-B7A1-7E6A119B75FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91DE82C-CD9B-4AE4-9013-BAB2826BF308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91DE82C-CD9B-4AE4-9013-BAB2826BF308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91DE82C-CD9B-4AE4-9013-BAB2826BF308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91DE82C-CD9B-4AE4-9013-BAB2826BF308}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91B8AB76-EA7A-4AE4-BD0A-932B754EFE1A}
+	EndGlobalSection
+EndGlobal
