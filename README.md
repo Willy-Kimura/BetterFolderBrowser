@@ -1,5 +1,5 @@
 # BetterFolderBrowser
-[![sc-donate](/Assets/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJ8D9CE8BWA3J&source=url)
+[![sc-nuget](/Assets/NuGet-Package-1.0.0-brightgreen.svg)](https://www.nuget.org/packages/BetterFolderBrowser/) [![sc-donate](/Assets/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJ8D9CE8BWA3J&source=url)
 
 **BetterFolderBrowser** is a .NET component library that was written to help developers provide a better folder-browsing and selection experience to users by employing a similar browser dialog as the standard [OpenFileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.openfiledialog?view=netframework-4.7.2) in place of the current [FolderBrowserDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.folderbrowserdialog?view=netframework-4.7.2) which only allows for single-folder selections with its tree-view display format. This allows for a much easier _viewing_, _modification_, _searching_ and _selection_ experience using the standard Windows Explorer dialog.
 
