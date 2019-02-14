@@ -9,9 +9,8 @@ Take a look at the folder-selection screenshot and usage-preview in action:
 ![bfb-usage](/Assets/better-folder-browser-live-preview.gif)
 
 # Installation
-[![sc-nuget](/Assets/NuGet-Package-1.0.0-brightgreen.svg)](https://www.nuget.org/packages/BetterFolderBrowser/) 
 
-To install via the NuGet Package Manager Console, type:
+To install via the [NuGet Package Manager](https://www.nuget.org/packages/BetterFolderBrowser/1.0.0) Console, type:
 
 > `Install-Package BetterFolderBrowser -Version 1.0.0`
 
