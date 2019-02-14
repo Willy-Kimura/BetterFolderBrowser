@@ -27,13 +27,11 @@ You can also choose to [download](https://github.com/Willy-Kimura/BetterFolderBr
 > Here are two examples of properties implementing the given custom editors:
 > ```c#
 >     // Allows selection of one folder.
->     [Editor(typeof(SelectedPathEditor), 
->     typeof(UITypeEditor))]
+>     [Editor(typeof(SelectedPathEditor), typeof(UITypeEditor))]
 >     public string MyFolderPath { get; set; }
 >     
 >     // Allows selection of many folders.
->     [Editor(typeof(SelectedPathsEditor), 
->     typeof(UITypeEditor))]
+>     [Editor(typeof(SelectedPathsEditor), typeof(UITypeEditor))]
 >     public string[] MyFolderPaths { get; set; }
 > ```
 
