@@ -45,7 +45,7 @@ To use it in code, first import `WK.Libraries.BetterFolderBrowserNS` - the code 
     var betterFolderBrowser = new BetterFolderBrowser();
 
 	betterFolderBrowser.Title = "Select folders...";
-    betterFolderBrowser.RootFolder = "C:\";
+	betterFolderBrowser.RootFolder = "C:\\";
     
     // Allow multi-selection of folders.
     betterFolderBrowser.Multiselect = true;
