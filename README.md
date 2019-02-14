@@ -9,9 +9,13 @@ Take a look at the folder-selection screenshot and usage-preview in action:
 ![bfb-usage](/Assets/better-folder-browser-live-preview.gif)
 
 # Installation
-You can [download](https://github.com/Willy-Kimura/BetterFolderBrowser/releases/download/v1.0.0/BetterFolderBrowser.dll) the assembly and add it to Visual Studio's Toolbox.
+[![sc-nuget](/Assets/NuGet-Package-1.0.0-brightgreen.svg)](https://www.nuget.org/packages/BetterFolderBrowser/) 
 
-*NuGet package coming soon.*
+To install via the NuGet Package Manager Console, type:
+
+> `Install-Package BetterFolderBrowser -Version 1.0.0`
+
+You can also choose to [download](https://github.com/Willy-Kimura/BetterFolderBrowser/releases/download/v1.0.0/BetterFolderBrowser.dll) the assembly and add it to Visual Studio's Toolbox.
 
 # Features
 - Works with [.NET 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=1639) and above allowing for usability across most .NET applications.
