@@ -78,4 +78,4 @@ If you're calling the dialog from within a custom [UserControl](https://docs.mic
 ```
 
 ## Donate
-Hey, you can always [buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJ8D9CE8BWA3J&source=url)) has been of value to you.
+Hey, you can always [buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJ8D9CE8BWA3J&source=url) if this component library ([or others](https://github.com/Willy-Kimura/SharpClipboard)) has been of value to you.
