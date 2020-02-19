@@ -37,7 +37,7 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
 
         #region Fields
 
-        // Wrapped dialog.
+        private bool allow_multiselect;
         private OpenFileDialog ofd = null;
 
         #endregion
@@ -45,62 +45,49 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
         #region Properties
 
         /// <summary>
-        /// 
+        /// Gets/Sets a value indicating whether to allow multi-selection of folders.
         /// </summary>
         /// <remarks></remarks>
-        private bool allow_multiselect;
         public bool AllowMultiselect
         {
-            get {
-                return allow_multiselect;
-            }
-            set {
-                ofd.Multiselect = value;
-            }
+            get { return allow_multiselect; }
+            set { ofd.Multiselect = value; }
         }
 
+        /// <summary>
+        /// Gets the list of selected folders as filenames.
+        /// </summary>
         public string[] FileNames
         {
-            get {
-                return ofd.FileNames;
-            }
+            get { return ofd.FileNames; }
         }
-
-
+        
         /// <summary>
         /// Gets/Sets the initial folder to be selected. A null value selects the current directory.
         /// </summary>
         public string InitialDirectory
         {
-            get {
-                return ofd.InitialDirectory;
-            }
+            get { return ofd.InitialDirectory; }
             set {
                 ofd.InitialDirectory = (value == null || value.Length == 0) ? Environment.CurrentDirectory : value;
             }
         }
 
         /// <summary>
-        /// Gets/Sets the title to show in the dialog
+        /// Gets/Sets the title to show in the dialog.
         /// </summary>
         public string Title
         {
-            get {
-                return ofd.Title;
-            }
-            set {
-                ofd.Title = (value == null) ? "Select a folder" : value;
-            }
+            get { return ofd.Title; }
+            set { ofd.Title = (value == null) ? "Select a folder" : value; }
         }
 
         /// <summary>
-        /// Gets the selected folder
+        /// Gets the selected folder.
         /// </summary>
         public string FileName
         {
-            get {
-                return ofd.FileName;
-            }
+            get { return ofd.FileName; }
         }
 
         #endregion
@@ -108,9 +95,9 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
         #region Methods
 
         /// <summary>
-        /// Shows the dialog
+        /// Shows the dialog.
         /// </summary>
-        /// <returns>True if the user presses OK else false</returns>
+        /// <returns>True if the user presses OK else false.</returns>
         public bool ShowDialog()
         {
             return ShowDialog(IntPtr.Zero);
@@ -141,7 +128,9 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
                 object pfde = r.New("FileDialog.VistaDialogEvents", ofd);
                 object[] parameters = new object[] { pfde, num };
                 r.CallAs2(typeIFileDialog, dialog, "Advise", parameters);
+
                 num = Convert.ToUInt32(parameters[1]);
+
                 try
                 {
                     int num2 = Convert.ToInt32(r.CallAs(typeIFileDialog, dialog, "Show", hWndOwner));
@@ -156,13 +145,16 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
             else
             {
                 var fbd = new FolderBrowserDialog();
+
                 fbd.Description = this.Title;
                 fbd.SelectedPath = this.InitialDirectory;
                 fbd.ShowNewFolderButton = false;
+
                 if (fbd.ShowDialog(new WindowWrapper(hWndOwner)) != DialogResult.OK)
                 {
                     return false;
                 }
+
                 ofd.FileName = fbd.SelectedPath;
                 flag = true;
             }
@@ -174,7 +166,7 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
     }
 
     /// <summary>
-    /// Creates IWin32Window around an IntPtr
+    /// Creates IWin32Window around an IntPtr.
     /// </summary>
     public class WindowWrapper : IWin32Window
     {
@@ -187,13 +179,11 @@ namespace WK.Libraries.BetterFolderBrowserNS.Helpers
         #region Properties
 
         /// <summary>
-        /// Original ptr
+        /// Original pointer.
         /// </summary>
         public IntPtr Handle
         {
-            get {
-                return _hwnd;
-            }
+            get { return _hwnd; }
         }
 
         #endregion
