@@ -74,3 +74,5 @@ If you're calling the dialog from within a custom [UserControl](https://docs.mic
         // ...
     }
 ```
+
+*Made with* 💛 *by* [*Willy Kimura*]([https://github.com/Willy-Kimura)

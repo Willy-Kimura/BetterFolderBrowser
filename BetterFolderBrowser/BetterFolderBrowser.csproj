@@ -10,6 +10,8 @@
     <RootNamespace>BetterFolderBrowserNS</RootNamespace>
     <AssemblyName>BetterFolderBrowser</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+	<PackageID>BetterFolderBrowser</PackageID>
+    <RepositoryUrl>https://github.com/Willy-Kimura/BetterFolderBrowser.git</RepositoryUrl>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
