@@ -32,7 +32,7 @@
     <WarningLevel>3</WarningLevel>
     <DocumentationFile>bin\Debug\BetterFolderBrowser.xml</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net2'">
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
