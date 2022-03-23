@@ -31,6 +31,11 @@
     <WarningLevel>3</WarningLevel>
     <DocumentationFile>bin\Debug\BetterFolderBrowser.xml</DocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\BetterFolderBrowser.xml</DocumentationFile>
+  </PropertyGroup>
+    
   <ItemGroup Condition="'$(TargetFramework)' == 'net2'">
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
