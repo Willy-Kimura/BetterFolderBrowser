@@ -45,6 +45,9 @@ namespace WK.Libraries.BetterFolderBrowserNS
     {
         #region Constructors
 
+        /// <summary>
+        /// Create a new Folder Browser Dialog.
+        /// </summary>
         public BetterFolderBrowser()
         {
             InitializeComponent();
@@ -52,6 +55,10 @@ namespace WK.Libraries.BetterFolderBrowserNS
             SetDefaults();
         }
 
+        /// <summary>
+        /// Create a new Folder Browser Dialog within the supplied <paramref name="container"/>
+        /// </summary>
+        /// <param name="container">IContainer control that will house the folder browser.</param>
         public BetterFolderBrowser(IContainer container)
         {
             container.Add(this);
@@ -261,11 +268,24 @@ namespace WK.Libraries.BetterFolderBrowserNS.Editors
     [EditorBrowsable(EditorBrowsableState.Never)]
     public class SelectedPathEditor : UITypeEditor
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext context)
         {
             return UITypeEditorEditStyle.Modal;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="provider"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public override object EditValue(ITypeDescriptorContext context,
                                 IServiceProvider provider, object value)
         {
@@ -304,11 +324,14 @@ namespace WK.Libraries.BetterFolderBrowserNS.Editors
     [EditorBrowsable(EditorBrowsableState.Never)]
     public class SelectedPathsEditor : UITypeEditor
     {
+        
+        /// <inheritdoc cref="SelectedPathsEditor.GetEditStyle(ITypeDescriptorContext)"/>
         public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext context)
         {
             return UITypeEditorEditStyle.Modal;
         }
 
+        /// <inheritdoc cref="SelectedPathsEditor.EditValue(ITypeDescriptorContext, IServiceProvider, object)"/>
         public override object EditValue(ITypeDescriptorContext context,
                                 IServiceProvider provider, object value)
         {
